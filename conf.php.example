@@ -1,0 +1,20 @@
+<?php
+
+//This file is imported into the other php scripts
+//to provide them with database information. 
+//This file should not be tracked in the versioning system
+//so that secret information isn't made public.
+
+//values are stored in an associative array to prevent 
+//variable name conflicts with the other scripts.
+
+$conf['server'] = "localhost";
+$conf['user'] = "derp";
+$conf['password'] = "herp";
+$conf['database_name'] = "mydb";
+$conf['table_name'] = "Scores";
+$conf['name_column'] = "Name";
+$conf['score_column'] = "Score";
+$conf['time_column'] = "Time";
+
+?>

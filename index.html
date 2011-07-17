@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta property="og:title" content="Pacman by Tyler Brazier" />
+<meta property="og:type" content="game" />
+<meta property="og:url" content="http://brazier.dyndns.org" />
+<meta property="og:image" content="http://brazier.dyndns.org/favicon.ico" />
+<meta property="og:site_name" content="Pacman by Tyler Brazier" />
+<meta property="fb:app_id" content="221941807819831" />
+	<title>Pacman</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="sound.js" charset="utf-8"></script>
+	<script type="text/javascript" src="grid.js" charset="utf-8"></script>
+	<script type="text/javascript" src="body.js" charset="utf-8"></script>
+	<script type="text/javascript" src="sprite.js" charset="utf-8"></script>
+	<script type="text/javascript" src="mouse.js" charset="utf-8"></script>
+	<script type="text/javascript" src="main.js" charset="utf-8"></script>
+	<script type="text/javascript" src="upgrades.js" charset="utf-8"></script>
+</head>
+
+<body id="body" style="text-align: center; background-color: black; color: yellow;">
+
+<div>
+
+	<audio id="eatCoin" src="sounds/eatCoin.ogg" preload="auto"></audio>
+	<audio id="gamestart" src="sounds/gamestart.ogg" preload="auto"></audio>
+	<audio id="gameover" src="sounds/gameover.ogg" preload="auto"></audio>
+	<audio id="eatBigCoin" src="sounds/eatBigCoin.ogg" preload="auto"></audio>
+	<audio id="eatGhost" src="sounds/eatGhost.ogg" preload="auto"></audio>
+	<audio id="eatUpgrade" src="sounds/eatUpgrade.ogg" preload="auto"></audio>
+	
+	<!-- Damn IE... -->
+	<audio id="eatCoinIE" src="sounds/eatCoin.mp3" preload="auto"></audio>
+	<audio id="gamestartIE" src="sounds/gamestart.mp3" preload="auto"></audio>
+	<audio id="gameoverIE" src="sounds/gameover.mp3" preload="auto"></audio>
+	<audio id="eatBigCoinIE" src="sounds/eatBigCoin.mp3" preload="auto"></audio>
+	<audio id="eatGhostIE" src="sounds/eatGhost.mp3" preload="auto"></audio>
+	<audio id="eatUpgradeIE" src="sounds/eatUpgrade.mp3" preload="auto"></audio>
+</div>
+
+<div>
+	<h3 id="info">Pacman by Tyler Brazier</h3>
+	<button id="start" style="font: bold 16px serif" onclick="start()">Insert Coin</button>
+	<button id="pause" style="font: bold 16px serif" onclick="togglePause()">Pause</button>
+	<input id="checkSound" type="checkbox" checked="checked" onchange="toggleSound()">Sound</input>
+</div>
+	
+<div id="canvasDiv" style="font: bold 16px serif">
+	<canvas id="canvas" height="608" width="800"><br />Your browser is too old to play Pacman. Go download one of these newer browsers:<br /><br />
+	<a href="http://www.google.com/chrome/" target="_blank">Google Chrome</a><br /><br />
+	<a href="http://www.mozilla.com/en-US/firefox/fx/" target="_blank">Firefox 4</a><br /><br />
+	<a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-9/worldwide-languages" target="_blank">Internet Explorer 9</a></canvas>
+</div>
+
+<div id="howToPlay">
+	<p style="font bold 16px serif" >You can use your mouse, arrow keys, or WASD to move.</p>
+</div>
+
+<div id="facebookLike">
+	<br />
+	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="brazier.dyndns.org" send="false" layout="button_count" width="70" show_faces="true" font=""></fb:like>
+</div>
+
+<div id="highScores" style="font: bold 16px serif">
+	<div id="playerVals"></div>
+	<div id="top10"></div>
+	<div id="top50"></div>
+	<div id="top100"></div>
+</div>
+
+</body>
+</html>

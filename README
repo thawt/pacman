@@ -1,0 +1,7 @@
+Rename or copy conf.php.example to conf.php and edit
+the values to match your database setup.
+Changes made to conf.php won't be tracked
+by git (as defined in .gitignore).
+The reason for this is so that secret database info
+isn't made public by commiting to a public repo.
+
