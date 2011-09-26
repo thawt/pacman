@@ -1,6 +1,6 @@
 /*
  * Each grid space should represent a pixel on the canvas with the addition of a Z axis for depth or layers
- * 
+ *  HEY IM Andy Forking your stuff hardcorly.
  * Functions of grid are:
  * getWidth()
  * getHeight()
